@@ -31,17 +31,504 @@
       </div>
     </header>
 
+    <!-- 메인 -->
     <main>
-      <!-- 메인 -->
+      <!-- 1. 히어로 섹션 -->
+      <section class="hero" id="hero">
+        <div class="hero__bg"></div>
+
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <span class="hero__eyebrow"
+              >SUPERIOR QUALITY, LOW RADIATION EXPOSURE</span
+            >
+
+            <h2 class="hero__title">
+              LEADING THE NEXT<br />
+              X-RAY SOLUTION
+            </h2>
+
+            <p class="hero__desc">
+              보다 강력한 성능, 보다 안전한 사용을 위한 끊임없는<br />
+              혁신을 만들어 나갑니다.
+            </p>
+          </div>
+
+          <!-- 슬라이드 -->
+          <div class="hero__indicator" aria-label="표지 슬라이드">
+            <span class="is-active"></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 1-2 컴퍼니 섹션 -->
+      <section class="company" id="about">
+        <div class="container company__inner">
+          <!-- 왼쪽 글자 부분 -->
+          <div class="company__intro">
+            <div class="company__label">
+              <span class="company__mark" aria-hidden="true"></span>
+              <span class="company__tag">COMPANY</span>
+            </div>
+
+            <h3 class="company__title">
+              포터블 엑스레이<br />
+              혁신의 리더, 덱스코윈
+            </h3>
+
+            <p class="company__desc">
+              ㈜덱스코윈은 포터블 엑스레이 분야를 선도하는 기업으로, 의료· 수의
+              · 산업 등 다양한 영역에서 활용 가능한 첨단장비와 솔루션을 개발,
+              제공하고 있습니다. 끊임없는 연구 개발을 통해 혁신적인 포터블
+              엑스레이 기술과 솔루션을 창출하여 인류복지와 삶의 질 향상에
+              기여하고 있습니다.
+            </p>
+
+            <a class="company__link" href="#">
+              회사소개 자세히 보기
+              <span class="company__arrow" aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <!-- 오른쪽 카드 3개 -->
+          <div class="company__cards">
+            <article class="company-card company-card--1">
+              <div class="company-card__thumb"></div>
+              <h4 class="company-card__title">포터블 엑스레이 전문 기업</h4>
+              <p class="company-card__text">
+                산업용 및 의료용 진단 장비를 위한 저선량, 고해상도 엑스레이
+                솔루션 및 시스템
+              </p>
+            </article>
+
+            <article class="company-card company-card--2">
+              <div class="company-card__thumb"></div>
+              <h4 class="company-card__title">시장 선도 기업</h4>
+              <p class="company-card__text">
+                2004년에 설립 이후 포터블 엑스레이 장치의 선도 기업으로서 꾸준히
+                성장하고 있습니다.
+              </p>
+            </article>
+
+            <article class="company-card company-card--3">
+              <div class="company-card__thumb"></div>
+              <h4 class="company-card__title">R&amp;D 선도 기업</h4>
+              <p class="company-card__text">
+                끊임없는 연구 개발을 통해 다양한 엑스레이 장비 및 관련 제품을
+                개발합니다.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. 비즈니스 섹션 -->
+      <section class="biz" id="business">
+        <div class="container biz__inner">
+          <div class="biz__visual" aria-hidden="true"></div>
+
+          <!-- 오른쪽 글자 -->
+          <div class="biz__content">
+            <div class="biz__label">
+              <span class="biz__mark" aria-hidden="true"></span>
+              <span class="biz__tag">BUSINESS</span>
+            </div>
+
+            <h3 class="biz__title">
+              다양한 환경에 알맞은<br />
+              최적의 진단솔루션
+            </h3>
+
+            <p class="biz__desc">
+              (주)덱스코윈은 휴대용 장비를 비롯한 인체 진단 및 동물, 일반 산업
+              등 엑스레이가 필요한 모든 영역에서 최적의 진단 솔루션을
+              제공합니다.
+            </p>
+
+            <ul class="biz__tabs" role="tablist" aria-label="비즈니스 카테고리">
+              <li>
+                <button
+                  class="biz__tab is-active"
+                  type="button"
+                  data-img="./assets/img/business/business_1.png"
+                >
+                  MEDICAL / DENTAL
+                </button>
+              </li>
+              <li>
+                <button
+                  class="biz__tab"
+                  type="button"
+                  data-img="./assets/img/business/business_2.png"
+                >
+                  NURSING HOMES
+                </button>
+              </li>
+              <li>
+                <button
+                  class="biz__tab"
+                  type="button"
+                  data-img="./assets/img/business/business_3.png"
+                >
+                  VETERINARY
+                </button>
+              </li>
+              <li>
+                <button
+                  class="biz__tab"
+                  type="button"
+                  data-img="./assets/img/business/business_4.png"
+                >
+                  SECURITY/NDT/MILITARY
+                </button>
+              </li>
+              <li>
+                <button
+                  class="biz__tab"
+                  type="button"
+                  data-img="./assets/img/business/business_5.png"
+                >
+                  EMERGENCY/LEGAL
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 Product 섹션 -->
+      <section class="prod" id="products">
+        <div class="container prod__inner">
+          <!-- 왼쪽 세로 글자 -->
+          <div class="prod__side" aria-hidden="true">
+            <div class="prod__side-rot">
+              <span class="prod__text">PRODUCT</span>
+              <span class="prod__mark"></span>
+            </div>
+            <div class="prod__watermark">DEXCOWIN</div>
+          </div>
+
+          <!-- 메인 이미지 + 썸네일 -->
+          <div class="prod__stage">
+            <div class="prod__frame">
+              <!-- 1번 제품 이미지 -->
+              <img
+                class="prod__main-img"
+                src="./assets/img/product/product_0.png"
+                alt="제품 이미지"
+              />
+            </div>
+
+            <ul class="prod__thumbs" aria-label="제품 썸네일">
+              <li>
+                <button
+                  class="prod__thumb is-active"
+                  type="button"
+                  data-index="0"
+                  data-img="./assets/img/product/product_0.png"
+                >
+                  <span class="prod__thumb-img"></span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="prod__thumb"
+                  type="button"
+                  data-index="1"
+                  data-img="./assets/img/product/product_2.png"
+                >
+                  <span class="prod__thumb-img"></span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="prod__thumb"
+                  type="button"
+                  data-index="2"
+                  data-img="./assets/img/product/product_3.png"
+                >
+                  <span class="prod__thumb-img"></span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="prod__thumb"
+                  type="button"
+                  data-index="3"
+                  data-img="./assets/img/product/product_4.png"
+                >
+                  <span class="prod__thumb-img"></span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="prod__thumb"
+                  type="button"
+                  data-index="4"
+                  data-img="./assets/img/product/product_5.png"
+                >
+                  <span class="prod__thumb-img"></span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="prod__thumb"
+                  type="button"
+                  data-index="5"
+                  data-img="./assets/img/product/product_6.png"
+                >
+                  <span class="prod__thumb-img"></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 오른쪽 부분 텍스트 + 화살표 -->
+          <div class="prod__content">
+            <span class="prod__chip">X-ray System</span>
+            <h3 class="prod__name">ADX6000FB</h3>
+            <p class="prod__sub">고출력 포터블 엑스레이</p>
+            <p class="prod__desc">
+              전신을 아우르는 고품질 엑스레이 촬영을 지원합니다. 협소한
+              공간에서도 최적의 이미지 솔루션을 제공합니다. 저선량으로 고품질의
+              엑스레이 이미지를 정확하고 편리하게 획득할 수 있습니다.
+            </p>
+
+            <div class="prod__nav" aria-label="제품 이동">
+              <button
+                class="prod__btn prod__prev"
+                type="button"
+                aria-label="이전"
+              ></button>
+              <button
+                class="prod__btn prod__next"
+                type="button"
+                aria-label="다음"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 Why -->
+      <section class="why" id="why">
+        <div class="why__bg" aria-hidden="true"></div>
+
+        <div class="container why__inner">
+          <div class="why__head">
+            <div class="why__label">
+              <span class="why__mark" aria-hidden="true"></span>
+              <span class="why__tag">WHY DEXCOWIN</span>
+            </div>
+
+            <h3 class="why__title">
+              끊임없는 연구와 성과를 바탕으로<br />
+              새로운 기준을 만들어 나갑니다.
+            </h3>
+
+            <a class="why__btn" href="#">더 알아보기</a>
+          </div>
+
+          <div class="why__cards">
+            <article class="why-card why-card--1">
+              <strong class="why-card__num">1</strong>
+              <h4 class="why-card__title">퍼스트 무버</h4>
+              <p class="why-card__desc">
+                배터리 탈착식 치과용 엑스레이의 시작, 혁신을 주도하는 포터블
+                엑스레이 전문 기업
+              </p>
+              <div class="why-card__ico" aria-hidden="true"></div>
+            </article>
+
+            <article class="why-card why-card--2">
+              <strong class="why-card__num">30</strong>
+              <h4 class="why-card__title">R&amp;D 투자</h4>
+              <p class="why-card__desc">
+                기업부설 연구소를 운영하고 있고 매출의 30% 이상 R&D에 투자
+              </p>
+              <div class="why-card__ico" aria-hidden="true"></div>
+            </article>
+
+            <article class="why-card why-card--3">
+              <strong class="why-card__num">300+</strong>
+              <h4 class="why-card__title">글로벌 파트너</h4>
+              <p class="why-card__desc">
+                85개국, 300여개 이상의 글로벌 파트너망을 구축하여 전세계로 수출
+              </p>
+              <div class="why-card__ico" aria-hidden="true"></div>
+            </article>
+
+            <article class="why-card why-card--4">
+              <div>
+                <strong class="why-card__num">50+</strong>
+                <h4 class="why-card__title">인증 및 특허</h4>
+                <p class="why-card__desc">
+                  FDA, CE를 비롯한 다수의 글로벌 인증으로 안정성과 기술 우수성
+                  입증
+                </p>
+              </div>
+              <div class="why-card__ico" aria-hidden="true"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Who We Are -->
+      <section class="who" id="who">
+        <div class="container who__inner">
+          <div class="who__label">
+            <span class="who__mark" aria-hidden="true"></span>
+            <span class="who__tag">WHO WE ARE</span>
+          </div>
+
+          <h3 class="who__title">
+            덱스코윈의 기술이 더 건강한 삶, 더 안전한 세상을 만들어 갑니다.
+          </h3>
+        </div>
+
+        <div class="who__stage">
+          <div class="who__bg" aria-hidden="true"></div>
+
+          <div class="container who__inner who__inner--stage">
+            <div class="who__center">
+              <h4 class="who__headline">FOR A SAFER WORLD</h4>
+              <p class="who__sub">WITH ADVANCED X-RAY SOLUTION</p>
+              <p class="who__desc">
+                의료, 요양원, 치과, 수의사, 보안/NDT, 비상 사태, 군, 법정의 등
+                다양한 환경과 제한된 자원 속에서도 경제성과 정확성을 동시에
+                실현하는 포터블 엑스레이 솔루션을 제공합니다.
+              </p>
+              <a class="who__btn" href="#">더 알아보기</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Support -->
+      <section class="support" id="support">
+        <div class="container support__inner">
+          <div class="support__top">
+            <div class="support__head">
+              <div class="support__label">
+                <span class="support__mark" aria-hidden="true"></span>
+                <span class="support__tag">SUPPORT</span>
+              </div>
+
+              <h3 class="support__title">
+                의료 서비스 경쟁력 향상과<br />
+                환자의 복지 개선에 이바지합니다.
+              </h3>
+            </div>
+
+            <a class="support__more" href="#">
+              전체보기
+              <span class="support__more-ico" aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <!-- 뉴스 카드 -->
+          <div class="support__grid" aria-label="뉴스 목록">
+            <article class="news-card">
+              <span class="news-card__tag">News</span>
+              <h4 class="news-card__title">
+                병원 밖에서도 X-ray 가능, 현장에서 바로 촬영하고 진단
+              </h4>
+              <p class="news-card__desc">
+                이번 규제 개선으로 요양 시설에서는 낙상.골절 등의 위급 상황 발생
+                시, 엑스레이 촬영을 위해 구급차...
+              </p>
+              <div class="news-card__date">
+                <span class="news-card__clock" aria-hidden="true"></span>
+                <time datetime="2025-09-12">2025.09.12</time>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <span class="news-card__tag">News</span>
+              <h4 class="news-card__title">
+                초경량 X선 장비로 의료 사각지대 봉사 활동 수행
+              </h4>
+              <p class="news-card__desc">
+                배터리 구동 및 저선량 방사선으로 작동하는 COCOON은 의료 서비스
+                제공과 직원 교육 모두를 지원하며...
+              </p>
+              <div class="news-card__date">
+                <span class="news-card__clock" aria-hidden="true"></span>
+                <time datetime="2025-08-24">2025.08.24</time>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <span class="news-card__tag">News</span>
+              <h4 class="news-card__title">
+                ICARST 2025에서 혁신적인 방사선 기술 선보여
+              </h4>
+              <p class="news-card__desc">
+                기존 장비 대비 1/3 수준의 방사선량으로 고품질 영상 촬영을
+                제공합니다.
+              </p>
+              <div class="news-card__date">
+                <span class="news-card__clock" aria-hidden="true"></span>
+                <time datetime="2025-07-19">2025.07.19</time>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <span class="news-card__tag">News</span>
+              <h4 class="news-card__title">
+                덱스코윈, 2025 글로벌 선도 기업으로 선정
+              </h4>
+              <p class="news-card__desc">
+                휴대용 X선 장비 수출 선도기업으로서, 첨단 제품 개발과 글로벌
+                인증을 통해 성장해 나가겠습니다.
+              </p>
+              <div class="news-card__date">
+                <span class="news-card__clock" aria-hidden="true"></span>
+                <time datetime="2025-07-04">2025.07.04</time>
+              </div>
+            </article>
+          </div>
+
+          <!-- 인재채용, 온라인 문의 -->
+          <div class="support__banners">
+            <a class="support-banner support-banner--red" href="#">
+              <div class="support-banner__text">
+                <strong class="support-banner__title">인재채용</strong>
+                <p class="support-banner__desc">
+                  덱스코윈의 미래를 함께 열어갈 인재를 모집합니다.
+                </p>
+              </div>
+              <span class="support-banner__arrow" aria-hidden="true"></span>
+            </a>
+
+            <a class="support-banner support-banner--blue" href="#">
+              <div class="support-banner__text">
+                <strong class="support-banner__title">온라인 문의</strong>
+                <p class="support-banner__desc">
+                  덱스코윈은 고객님의 물음에 언제든 준비되어 있습니다.
+                </p>
+              </div>
+              <span class="support-banner__arrow" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- 하단바 -->
     <footer class="site-footer">
       <div class="container footer__inner">
-        <div class="footer__left">
+        <div class="footer__top">
           <a class="footer__brand" href="./index.html" aria-label="홈으로">
             <img src="./assets/img/logo-footer.png" alt="RGBCOM" />
           </a>
+        </div>
+        <div class="footer__left">
+          <!-- <a class="footer__brand" href="./index.html" aria-label="홈으로">
+            <img src="./assets/img/logo-footer.png" alt="RGBCOM" />
+          </a> -->
 
           <ul class="footer__links">
             <li><a href="#about">회사소개</a></li>
@@ -52,15 +539,29 @@
 
           <div class="footer__info">
             <p class="footer__addr">
-              한국본사 서울시 금천구 가산디지털1로 25, 901~905호
-              (가산동,대륭테크노타운 17차)
+              <span class="footer__label">한국본사</span>
+              <span class="footer__value"
+                >서울시 금천구 가산디지털1로 25, 901~905호
+                (가산동,대륭테크노타운 17차)</span
+              >
             </p>
             <p class="footer__contact">
-              TEL <span>02-3402-5500</span>
-              <span class="sep"> </span>
-              FAX <span>02-3402-5539</span>
-              <span class="sep"> </span>
-              EMAIL <a href="mailto:info@rgbcom.com">info@dexcowin.com</a>
+              <span class="footer__item">
+                <span class="footer__label">TEL</span>
+                <span class="footer__value">02-3402-5500</span>
+              </span>
+
+              <span class="footer__item">
+                <span class="footer__label">FAX</span>
+                <span class="footer__value">02-3402-5539</span>
+              </span>
+
+              <span class="footer__item">
+                <span class="footer__label">EMAIL</span>
+                <a class="footer__value" href="mailto:info@rgbcom.com">
+                  info@dexcowin.com
+                </a>
+              </span>
             </p>
           </div>
 

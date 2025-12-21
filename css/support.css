@@ -1,0 +1,575 @@
+/* 상단바 */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.header__inner {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand img {
+  display: block;
+  height: 28px; /* 로고 높이(수정 예정) */
+  width: auto;
+}
+
+.gnb__list {
+  display: flex;
+  gap: 36px;
+  color: #737373;
+}
+
+.gnb__list a {
+  display: inline-block;
+  padding: 8px 0;
+  font-size: 14px;
+  /* color: #111; */
+}
+
+/* 하단바 */
+.site-footer {
+  background: #000;
+  color: #bdbdbd;
+  padding: 36px 0;
+}
+
+.footer__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer__top {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* 구분선 */
+.footer__inner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #333;
+  top: 172px;
+}
+
+/* 왼쪽 영역 */
+.footer__left {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__brand img {
+  display: block;
+  height: 28px;
+  width: auto;
+  margin-bottom: 14px;
+}
+
+.footer__label {
+  color: #fff;
+  font-weight: 700;
+}
+.footer__value {
+  color: #bdbdbd;
+  font-weight: 400;
+}
+
+.footer__addr .footer__label {
+  color: #fff;
+  font-weight: 700;
+  gap: 8px;
+}
+
+/* 상단 링크 라인 */
+.footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.footer__links a {
+  color: #d9d9d9;
+  font-size: 13px;
+}
+
+/* TEL, FAX, EMAIL` */
+.footer__contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  font-size: 13px;
+  color: #bdbdbd;
+}
+
+.footer__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 주소,연락처 */
+.footer__info {
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* 구분선 */
+/* .footer__left::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  margin: 22px 0;
+} */
+
+/* 카피라이트 */
+.footer__copy {
+  font-size: 12px;
+  color: #7a7a7a;
+  margin-top: 50px;
+}
+
+/* SNS 마크 */
+.footer__right {
+  position: absolute;
+  right: 0;
+  top: 112px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.footer__right a {
+  display: inline-flex;
+}
+.footer__right img {
+  /* display: block; */
+  width: 28px;
+  height: 28px;
+}
+
+/* TOP button(위치 수정 예정) */
+.top-btn {
+  position: fixed;
+  right: 80px;
+  bottom: 200px;
+  z-index: 2000;
+  width: 56px;
+  height: 56px;
+  background: #e60012;
+  color: #fff;
+  border: 0;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* 1. Customer Hero */
+
+.customer-hero {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+}
+
+/* 배경 이미지 */
+.customer-hero__bg {
+  position: absolute;
+  inset: 0;
+  /* background: #000;  */
+  background: url("../assets/img/customer/customer_main.png") no-repeat center;
+  background-size: cover;
+}
+
+.customer-hero__inner {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: #fff;
+}
+
+.customer-hero__title {
+  position: relative;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+}
+
+.customer-hero__desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* 2. 인증 탭 */
+.customer-tabs {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.customer-tabs__inner {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer-tabs__list {
+  display: flex;
+  gap: 140px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.customer-tabs__tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  padding: 0 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: #777;
+  text-decoration: none;
+
+  position: relative;
+}
+
+/* 클릭된 탭 */
+.customer-tabs__tab.is-active {
+  color: #e60012;
+  font-weight: 800;
+}
+
+.customer-tabs__tab.is-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: #e60012;
+}
+
+/* 인증 텍스트 */
+.cert {
+  padding: 90px 0 60px;
+  background: #fff;
+}
+
+.cert__inner {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-items: start;
+  gap: 120px;
+  margin-right: 30px;
+}
+
+.cert__left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.cert__bar {
+  width: 34px;
+  height: 2px;
+  background: #e60012;
+}
+
+.cert__title {
+  font-size: 44px;
+  font-weight: 900;
+  margin: 0;
+  color: #111;
+}
+
+.cert__desc {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #999;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+  .customer-tabs__list {
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .customer-tabs__inner {
+    height: auto;
+    padding: 10px 0;
+  }
+  .customer-tabs__tab {
+    height: 46px;
+  }
+  .cert__inner {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .cert__left {
+    justify-content: center;
+  }
+  .cert__desc {
+    text-align: center;
+  }
+}
+
+/* 사람 사진 + 빨간 박스 */
+.cert-visual {
+  padding: 40px 0 120px;
+  background: #fff;
+}
+
+.cert-visual__inner {
+  position: relative;
+  min-height: 420px;
+}
+
+/* 사람 사진 */
+.cert-visual__photo {
+  width: 100%;
+  height: 300px;
+  /* background: #ddd;  */
+  background: url("../assets/img/customer/customer_1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 빨간 박스 겹치게 */
+.cert-visual__box {
+  position: absolute;
+  left: 60px;
+  bottom: -70px;
+  width: 260px;
+  height: 260px;
+  background: #e60012;
+  padding: 34px 28px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cert-visual__box-text {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+
+/* 빨간 박스 안 로고 */
+.cert-visual__logo {
+  width: 120px;
+  height: 26px;
+  /* background: rgba(255, 255, 255, 0.2);  */
+  background: url("../assets/img/customer/customer_0.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+  .cert-visual__photo {
+    height: 260px;
+  }
+  .cert-visual__box {
+    width: 220px;
+    height: 220px;
+    bottom: -60px;
+    padding: 26px 22px 18px;
+  }
+  .cert-visual__box-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cert-visual__inner {
+    min-height: auto;
+  }
+  .cert-visual__photo {
+    height: 220px;
+  }
+  .cert-visual__box {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+  }
+  .cert-visual__logo {
+    margin-top: 18px;
+  }
+}
+
+/* 인증 카드 + 페이지네이션 */
+.cert-list {
+  padding: 40px 0 110px;
+  background: #fff;
+}
+
+.cert-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+.cert-card__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 썸네일 */
+.cert-card__thumb {
+  height: 280px;
+  background: #f3f3f3;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-card__thumb img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  display: block;
+}
+
+/* 텍스트 */
+.cert-card__title {
+  margin: 26px 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  color: #111;
+  word-break: keep-all;
+}
+
+.cert-card__sub {
+  margin: 0;
+  font-size: 11px;
+  color: #777;
+  text-align: center;
+}
+
+/* 하단 구분선 */
+.cert-card {
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ededed;
+}
+
+/* hover 효과(추가 예정) */
+.cert-card__link:hover .cert-card__thumb {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+.cert-card__thumb {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+/* 페이지네이션 */
+.pager {
+  margin-top: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.pager__btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+  color: #bdbdbd;
+  padding: 6px 8px;
+}
+
+.pager__num {
+  font-size: 14px;
+  color: #bdbdbd;
+  text-decoration: none;
+  padding: 6px 4px;
+  position: relative;
+}
+
+.pager__num.is-active {
+  color: #e60012;
+  font-weight: 800;
+}
+.pager__num.is-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 2px;
+  background: #e60012;
+}
+
+/* 버튼 hover */
+.pager__btn:hover,
+.pager__num:hover {
+  color: #666;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cert-card__thumb {
+    height: 300px;
+  }
+}
+@media (max-width: 640px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+  .cert-card__thumb {
+    height: 260px;
+  }
+}
